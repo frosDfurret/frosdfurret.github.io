@@ -44,7 +44,7 @@ body {
 
 #hd-links {
   position: fixed;
-  top: calc(30vh + 77px);
+  top: calc(30vh + 64px);
   left: 10vw;
   color: white;
   list-style: none;
