@@ -2,7 +2,7 @@ const images = ['sfday.jpg', 'stationstairs.jpg', 'subway.jpg', 'street.jpg', 's
 const randomImage = images[Math.floor(Math.random() * images.length)];
 console.log(randomImage)
 const bg = document.createElement("img");
-bg.id = "img-bg";
+bg.id = "bg-img";
 bg.src = './assets/img/' + randomImage;
 console.log(bg.src)
 document.body.insertBefore(bg, document.body.firstChild);
