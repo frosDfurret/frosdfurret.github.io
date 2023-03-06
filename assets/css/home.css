@@ -34,3 +34,39 @@ body {
 	font-size: 100px;
 	font-family: 'Times New Roman';
 }
+
+#hd-logo {
+  position: fixed;
+  top: 30vh;
+  left: 10vw;
+  width: 400px;
+}
+
+#hd-links {
+  position: fixed;
+  top: calc(30vh + 77px);
+  left: 10vw;
+  color: white;
+  list-style: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 40px;
+}
+
+#hd-links > li {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  padding-left: 0px;
+  transition-property: padding-left text-decoration-color;
+  transition-duration: 0.22s;
+  width: 300px;
+  /*
+  transition-property: text-decoration-color;
+  transition-duration: 0.1s;
+  */
+}
+
+#hd-links > li:hover {
+  cursor: pointer;
+  padding-left: 11px;
+  text-decoration-color: inherit;
+}
