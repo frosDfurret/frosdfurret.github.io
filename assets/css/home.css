@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	background-color: black;
+}
+
+#img-bg {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	filter: blur(6px);
+	opacity: 33%;
+	z-index: -1000;
+	pointer-events: none;
+}
+
+#b4-loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	z-index: 100;
+	transition-property: opacity;
+	transition-duration: 0.5s;
+}
