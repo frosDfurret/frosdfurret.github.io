@@ -13,4 +13,4 @@ const load = setInterval(function() {
 	b4.style.opacity = "0%";
 	setTimeout(function(){b4.style.display = "none";},500);
   }
-}, 1000);
+}, 1500);

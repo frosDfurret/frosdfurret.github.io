@@ -26,4 +26,11 @@ body {
 	z-index: 100;
 	transition-property: opacity;
 	transition-duration: 0.5s;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 100px;
+	font-family: 'Times New Roman';
 }
