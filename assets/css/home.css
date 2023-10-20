@@ -70,3 +70,7 @@ body {
   padding-left: 11px;
   text-decoration-color: inherit;
 }
+
+#sec-head {
+  transition-property: opacity left
+}
