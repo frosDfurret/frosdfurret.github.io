@@ -1,0 +1,43 @@
+html {
+  background-color: black;
+  font-family: monospace;
+  color: white;
+  overflow: hidden;
+}  
+
+body {
+  height: 100%;
+}
+
+#content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 420px;
+}
+
+h1 {
+  line-height: 0px;
+}
+
+button {
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+  color: white;
+  background-color: black;
+  font-family: monospace;
+  font-size: 20px;
+  width: 200px;
+  height: 30px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media only screen and (max-device-width : 640px) {
+  
+}

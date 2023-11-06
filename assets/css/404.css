@@ -1,0 +1,15 @@
+html {
+  background-color: #0000a8;
+  cursor: url("/assets/media/cursor.cur"), default;
+}
+
+img {
+  width: 70vw;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  image-rendering: pixelated;
+}
