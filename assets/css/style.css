@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 body {
-  max-width: 1366px;
+  max-width: 1440px;
   margin: 0 auto;
   padding-left: 100px;
   padding-right: 100px;
   font-family: 'Space Grotesk', sans-serif;
+  background: #FCDAE2;
+  background-image: url("../media/bg.png");
+  image-rendering: crisp-edges;
 }
 
 #header {
 	padding-top: 32vh;
 	display: flex;
-
+	width: 1000px
 }
 
 #navbar {
