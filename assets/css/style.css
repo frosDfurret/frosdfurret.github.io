@@ -31,7 +31,6 @@ body {
 #content {
 	flex: 1;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.05);
 	margin-bottom: 42px;
 	-moz-box-shadow: inset -8px -8px 8px 0 rgba(255, 255, 255, 0.5),
 		inset 8px 8px 8px 0 rgba(174, 174, 192, 0.2);
