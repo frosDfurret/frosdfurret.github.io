@@ -1,35 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 body {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-left: 100px;
-  padding-right: 100px;
-  font-family: 'Space Grotesk', sans-serif;
-  background: #FCDAE2;
-  background-image: url("../media/bg.png");
-  image-rendering: crisp-edges;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: "Space Grotesk", sans-serif;
+    background: #fcdae2;
+    background-image: url("../media/bg.png");
+    image-rendering: crisp-edges;
+    transition: background 0.2s ease-out;
 }
 
 #header {
-	padding-top: 32vh;
-	display: flex;
-	width: 1000px
+    padding-top: 32vh;
+    display: flex;
+    width: 1000px;
 }
 
 #navbar {
-	align-self: flex-end;
-	font-size: 32px;
-	padding-left: 50px;
-	padding-bottom: 15px;
+    align-self: flex-end;
+    font-size: 32px;
+    padding-left: 50px;
+    padding-bottom: 15px;
 }
 
 .link {
-	color: black;
-	text-decoration-color: rgba(0, 0, 0, 0);
-	transition: text-decoration-color 0.25s;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0);
+    transition: text-decoration-color 0.2s;
 }
 
 .link:hover {
-	text-decoration-color: rgba(0, 0, 0, 1);
+    text-decoration-color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+#logo {
+    transition: filter 0.2s ease-out;
+}
+
+#logo:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px #ffffff) drop-shadow(0px 0px 10px #ffffff);
 }
