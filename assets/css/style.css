@@ -1,112 +1,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 html {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	height: 100%;
-	box-sizing: border-box;
-	max-width: 1440px;
-	margin: 0 auto;
-	padding-left: 100px;
-	padding-right: 100px;
-	font-family: "Space Grotesk", sans-serif;
-	background: #ddd;
-	background-image: url("../media/bg.png");
-	image-rendering: crisp-edges;
-	transition: background 0.5s;
-	display: flex;
-	flex-flow: column;
+    height: 100%;
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: "Space Grotesk", sans-serif;
+    background: #ddd;
+    background-image: url("../media/bg.png");
+    image-rendering: crisp-edges;
+    transition: background 0.5s;
+    display: flex;
+    flex-flow: column;
 }
 
 #header {
-	transition: padding-top 0.5s;
-	padding-top: 32vh;
-	padding-bottom: 25px;
-	display: flex;
-	width: 1000px;
+    transition: padding-top 0.5s;
+    padding-top: 32vh;
+    padding-bottom: 25px;
+    display: flex;
+    width: 1000px;
 }
 
 #content {
-	flex: 1;
-	width: 100%;
-	margin-bottom: 42px;
-	-moz-box-shadow: inset -8px -8px 8px 0 rgba(255, 255, 255, 0.5),
-		inset 8px 8px 8px 0 rgba(174, 174, 192, 0.2);
-	-webkit-box-shadow: inset -8px -8px 8px 0 rgba(255, 255, 255, 0.5),
-		inset 8px 8px 8px 0 rgba(174, 174, 192, 0.2);
-	box-shadow:
-		inset -8px -8px 8px 0 rgba(255, 255, 255, 0.5),
-		inset 8px 8px 8px 0 rgba(174, 174, 192, 0.2);
-	border-radius: 8px;
-	opacity: 0%;
-	transition: opacity 0.2s;
+    flex: 1;
+    width: 100%;
+    margin-bottom: 42px;
+    -moz-box-shadow:
+        inset -8px -8px 8px 0 rgba(255, 255, 255, 0.5),
+        inset 8px 8px 8px 0 rgba(174, 174, 192, 0.2);
+    -webkit-box-shadow:
+        inset -8px -8px 8px 0 rgba(255, 255, 255, 0.5),
+        inset 8px 8px 8px 0 rgba(174, 174, 192, 0.2);
+    box-shadow:
+        inset -8px -8px 8px 0 rgba(255, 255, 255, 0.5),
+        inset 8px 8px 8px 0 rgba(174, 174, 192, 0.2);
+    border-radius: 8px;
+    opacity: 0%;
+    transition: opacity 0.2s;
 }
 
 #navbar {
-	align-self: flex-end;
-	font-size: 32px;
-	padding-left: 50px;
-	padding-bottom: 15px;
-	user-select: none;
+    align-self: flex-end;
+    font-size: 32px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    user-select: none;
 }
 
 .link {
-	color: black;
-	text-decoration: underline;
-	text-decoration-color: rgba(0, 0, 0, 0);
-	transition: text-decoration-color 0.2s;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0);
+    transition: text-decoration-color 0.2s;
 }
 
 .link:hover {
-	text-decoration-color: rgba(0, 0, 0, 1);
-	cursor: pointer;
+    text-decoration-color: rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
 
 .link:active {
-	text-decoration-color: rgba(0, 0, 0, 0);
+    text-decoration-color: rgba(0, 0, 0, 0);
 }
 
 #logo {
-	cursor: pointer;
-	transition: filter 0.2s ease-in-out;
+    cursor: pointer;
+    transition: filter 0.2s ease-in-out;
 }
 
 #logo:hover {
-	/* goofy shit happening here */
-	filter: drop-shadow(0px 0px 10px #ffffff) drop-shadow(0px 0px 10px #ffffff) drop-shadow(0px 0px 15px #ffffff);
+    /* goofy shit happening here */
+    filter: drop-shadow(0px 0px 10px #ffffff) drop-shadow(0px 0px 10px #ffffff)
+        drop-shadow(0px 0px 15px #ffffff);
 }
 
 .section {
-	display: none;
-	margin-top: 25px;
-	padding-left: 21px;
-	padding-right: 21px;
+    display: none;
+    margin-top: 25px;
+    padding-left: 21px;
+    padding-right: 21px;
 }
 
-
-
+.movehead {
+    padding-top: 100px !important;
+}
 
 #temporarybye {
-	z-index: 9999999;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100vw;
-	background-color: black;
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
-	padding: 0px;
-	visibility: hidden;
+    z-index: 9999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0px;
+    visibility: hidden;
 }
 
 @media (max-width: 1439px) {
-  #temporarybye {
-	visibility: visible;
+    #temporarybye {
+        visibility: visible;
+    }
 }
+
+@media (max-height: 899px) {
+    .movehead {
+        padding-top: 42px !important;
+    }
+    #content {
+        margin-bottom: 25px;
+    }
 }
