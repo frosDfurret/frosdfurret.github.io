@@ -14,6 +14,7 @@ function reset() {
   header.className = "";
   content.style.opacity = "0%";
   document.body.style.background = "#ddd";
+  document.title = "home - daguil";
   header.addEventListener("transitionend", function (event) {
     document.getElementById("about").style.display = "none";
     document.getElementById("socials").style.display = "none";
@@ -27,6 +28,7 @@ function setup(sect) {
   header.className = "movehead";
   content.style.opacity = "100%";
   document.body.style.background = bgColors[sect];
+  document.title = sect + " - daguil";
   if (current !== null) {
     document.getElementById(current).style.display = "none";
   }
