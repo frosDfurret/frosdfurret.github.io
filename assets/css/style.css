@@ -41,8 +41,6 @@ body {
 		inset -8px -8px 8px 0 rgba(255, 255, 255, 0.5),
 		inset 8px 8px 8px 0 rgba(174, 174, 192, 0.2);
 	border-radius: 8px;
-	padding-left: 21px;
-	padding-right: 21px;
 	opacity: 0%;
 	transition: opacity 0.2s;
 }
@@ -84,4 +82,6 @@ body {
 .section {
 	display: none;
 	margin-top: 25px;
+	padding-left: 21px;
+	padding-right: 21px;
 }

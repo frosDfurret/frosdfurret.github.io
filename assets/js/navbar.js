@@ -5,8 +5,8 @@ document.body.style.background = "#ddd";
 current = null
 bgColors = {
 	"about": "#DBEEFA",
-	"socials": "#FFD6D8",
-	"projects": "#FFF4D6",
+	"socials": "#FFF4D6",
+	"projects": "#FFD6D8",
 	"gallery": "#EEF8DD"
 }
 
