@@ -10,15 +10,15 @@
     </head>
     <body>
         <div id="header">
-            <img src="./assets/media/daguil.svg" id="logo" />
+            <img src="./assets/media/daguil.svg" id="logo" onclick="reset()"/>
             <div id="navbar">
-                <span class="link">about</span>
+                <span class="link" onclick="setup('about')">about</span>
                 &#8725;
-                <span class="link">socials</span>
+                <span class="link" onclick="setup('socials')">socials</span>
                 &#8725;
-                <span class="link">projects</span>
+                <span class="link" onclick="setup('projects')">projects</span>
                 &#8725;
-                <span class="link">gallery</span>
+                <span class="link" onclick="setup('gallery')">gallery</span>
             </div>
         </div>
         <div id="content">
