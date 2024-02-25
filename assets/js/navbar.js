@@ -15,11 +15,20 @@ function reset() {
   content.style.opacity = "0%";
   document.body.style.background = "#ddd";
   document.title = "home - daguil";
+  if (current !== null) {
+    document.getElementById("link-" + current).style.fontWeight = "normal";
+  }
   header.addEventListener("transitionend", function (event) {
+    /*
+    a reminder of bad, bad times:
     document.getElementById("about").style.display = "none";
     document.getElementById("socials").style.display = "none";
     document.getElementById("projects").style.display = "none";
     document.getElementById("gallery").style.display = "none";
+    */
+    if (current !== null) {
+      document.getElementById(current).style.display = "none";
+    }
     header.removeEventListener("transitionend", arguments.callee);
   });
 }
@@ -31,7 +40,9 @@ function setup(sect) {
   document.title = sect + " - daguil";
   if (current !== null) {
     document.getElementById(current).style.display = "none";
+    document.getElementById("link-" + current).style.fontWeight = "normal";
   }
-  document.getElementById(sect).style.display = "block";
+  document.getElementById(sect).style.display = "flex";
+  document.getElementById("link-" + sect).style.fontWeight = "bold";
   current = sect;
 }
