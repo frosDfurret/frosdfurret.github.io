@@ -120,7 +120,6 @@ body {
     /* you found secret bodge #2 !!! */
     padding-top: 45px;
     padding-bottom: 15px;
-    pointer-events: none;
 }
 
 #temporarybye {
@@ -142,7 +141,6 @@ body {
 
 div {
     scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.05);
-    scrollbar-width: thin;
 }
 
 /* about css */
@@ -232,6 +230,7 @@ div {
 }
 
 #soc-container a {
+	margin-bottom: 10px;
     height: 75px;
     width: 75px;
     border-radius: 8px;
@@ -244,24 +243,24 @@ div {
         inset 4px 4px 4px 0 rgba(255, 255, 255, 0.7),
         inset -4px -4px 4px 0 rgba(174, 174, 192, 0.7);
     transition:
-        box-shadow 0.1s,
-        filter 0.1s,
-        margin-left 0.2s;
+        box-shadow 0.1s ease-out,
+        filter 0.1s ease-out;
 }
 
 #soc-container a:hover {
-    filter: brightness(1.2);
+    filter: brightness(1.1);
 }
 
 #soc-container a:active {
     box-shadow:
-        inset 4px 4px 4px 0 rgba(174, 174, 192, 0.7),
+        inset 4px 4px 4px 0 rgba(174, 174, 192, 0.5),
         inset -4px -4px 4px 0 rgba(255, 255, 255, 0.7);
     filter: brightness(0.9);
 }
 
 #soc-container a div {
     padding-left: 45px;
+	width: 500px;
 }
 
 .soc-site {
@@ -270,14 +269,13 @@ div {
     /* you found secret bodge #3!! */
     /* this code is guaranteed to break at some point in the future™ */
     line-height: 13px;
-    padding-top: 11px;
+    padding-top: 14px;
     user-select: none;
 }
 
 .soc-user {
     font-weight: bold;
     font-size: 25pt;
-    margin-left: 5px;
     color: black;
     user-select: none;
 }
@@ -287,12 +285,16 @@ div {
     cursor: pointer;
 }
 
+.soc-open:hover {
+    background-image: url("../media/icons/open.svg") !important;
+}
+
 #soc-container {
-    height: 100%;
     width: 100%;
     overflow-y: auto;
     padding-top: 142px;
     padding-left: 42px;
+    padding-bottom: 50px;
 }
 
 /* device specific styles; KEEP AT BOTTOM OF STYLESHEET!!! */
