@@ -14,7 +14,7 @@ const homeColors = [
 ];
 // fsr i have to set bg color using dom first or else it'll look funny
 // update: i figured it out. but i won't fix it.
-// you found secret bodge #1 !!!
+// soo...you found secret bodge #1 !!!
 document.body.style.background =
   homeColors[Math.floor(Math.random() * homeColors.length)];
 current = null;
