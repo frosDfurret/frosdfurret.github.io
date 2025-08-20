@@ -301,7 +301,17 @@ div {
 
 @media (max-width: 1106px) {
     #temporarybye {
-        /* visibility: visible; */
+        visibility: visible;
+    }
+    #abt-sectleft {
+        width: 135px;
+    }
+    body {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #header {
+        display: block;
     }
 }
 
